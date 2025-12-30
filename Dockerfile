@@ -1,13 +1,11 @@
-FROM python:3.11-alpine
+FROM python:3.11-slim
 
-# Set working directory
+ENV PYTHONUNBUFFERED=1
+
 WORKDIR /app
 
-# Copy the monitoring script
-COPY monitor.py .
+COPY src/monitor.py .
 
-# Install dependencies
-RUN pip install psutil
+RUN pip install --no-cache-dir psutil
 
-# CMD to run the script
 CMD ["python", "monitor.py"]

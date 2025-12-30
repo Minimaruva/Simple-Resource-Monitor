@@ -41,7 +41,7 @@ def print_stats(stats):
     print('=' * WIDTH)
 
     cpu_txt = f" CPU Usage: {stats['cpu_percent']}%"
-    cores_txt = f"Cores: {CPU_LOGICAL}"
+    cores_txt = f"Logical Cores: {CPU_LOGICAL}"
     # <23 for alignment
     print(f"={cpu_txt:^23}|| {cores_txt:^22}=")
     print(f"={'-' * INNER_WIDTH}=")
