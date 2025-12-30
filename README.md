@@ -21,7 +21,7 @@ No installation required other than Docker.
 ```bash
 # Clone the repository
 git clone "https://github.com/Minimaruva/Simple-Resource-Monitor"
-cd server-stats-monitor
+cd Simple-Resource-Monitor
 
 # Make the script executable
 chmod +x run.sh
